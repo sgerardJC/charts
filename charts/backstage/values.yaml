@@ -134,8 +134,9 @@ backstage:
     pullSecrets: []
 
   # -- Container ports on the Deployment
-  containerPorts:
-    backend: 7007
+  container:
+    backendPort: 7007
+    extraPorts: []
 
   # -- Backstage container command
   command: ["node", "packages/backend"]
